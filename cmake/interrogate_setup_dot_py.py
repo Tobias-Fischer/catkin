@@ -40,12 +40,6 @@ from argparse import ArgumentParser
 setup_modules = []
 
 try:
-    import distutils.core
-    setup_modules.append(distutils.core)
-except ImportError:
-    pass
-
-try:
     import setuptools
     setup_modules.append(setuptools)
 except ImportError:
